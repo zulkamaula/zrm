@@ -27,18 +27,19 @@ section.hero-section {
 .hero-image {
   border-radius: 5px;
   background-color: #FFFCFC;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
   padding: 2vmax;
-  width: 30vmax;
+  width: 35vmax;
   text-align: center;
 }
 .hero-title {
   display: block;
-  font-size: 2.5vw;
+  font-size: 30px;
   margin: 2vh 0;
 }
 
 .hero-text {
-  font-size: 1vmax;
+  font-size: 1.5vmax;
   color: #9D9C9C;
 }
 .wrap-height {
@@ -57,7 +58,7 @@ section.hero-section {
  color: #fff;
   cursor: pointer;
   transition: all .2s;
-  font-size: 2.5vw;
+  font-size: 15px;
 }
 .btn-hero:hover {
   background-color: #9D9C9C;
@@ -153,6 +154,7 @@ footer {
  padding: 2vmax;
  background-color: #2F2E2E;
  color: #fff;
+  font-size: 15px;
 }
 .copyright {
   text-align: right;
@@ -165,6 +167,58 @@ footer {
 .socmed {
   cursor: pointer;
 }
+
+/* UX SECTION */
+.mySkills {
+  text-align: left;
+  margin: 3vmax .5vmax;
+  padding: 1vmax;
+
+}
+.flexContainer {
+  text-align: left;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2vh 0;
+  height: 60vh;
+  padding: 0;
+  overflow: auto;
+}
+.flexContainer div {
+  width: 33%;
+  height: auto;
+  margin: 1vw;
+  padding: 1vw;
+}
+.flexContainer img {
+  width: 8vmax;
+  height: auto;
+  min-height: 9vmax;
+}
+.flexContainer h3 {
+  margin: 1vh 0;
+}
+
+/* WORK SECTION */
+.myWork {
+  text-align: left;
+  margin: 3vmax .5vmax;
+  padding: 1vmax;
+}
+.workGrid {
+  display: grid;
+  grid-gap: 1vmax;
+  grid-template-areas: 'myArea myArea';
+  margin: 2vh 0;
+}
+.workGrid > div > div {
+  padding: 1vw;
+  margin: 1vh 0;
+}
+.workGrid img {
+  border-radius: 3px;
+}
+
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
 .menu { 
