@@ -218,6 +218,12 @@ footer {
 .workGrid img {
   border-radius: 3px;
 }
+.workGrid button {
+  padding: 1vmax;
+  margin: 1vmax 0;
+  border: .5px solid rgba(0, 0, 0, .3);
+  border-radius: 3px;
+}
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
